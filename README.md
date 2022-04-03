@@ -140,7 +140,11 @@ module.exports = {
 npm install react-router-dom@6
 ```
 
-Para contribuir debes:
+Agregamos la navegacion entre diferentes rutas, para ello recurrir a la documentacion de RRD6
+
+## Atomic Design
+
+Aplicando Atomic Design como metodología de diseño de producto, creamos todos los componentes, paginas y layouts de acuerdo al diseno del shop, y de una vez integramos el header en cada una de las paginas.
 
 1. Realizar un `git pull origin master` para obtener la última versión desde el repositorio en tu cuenta
    **HTTPS**
