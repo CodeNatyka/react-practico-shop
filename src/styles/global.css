@@ -1,20 +1,7 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
-
-:root {
-    --white: #ffffff;
-    --black: #000000;
-    --very-light-pink: #c7c7c7;
-    --text-input-field: #f7f7f7;
-    --hospital-green: #acd9b2;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
-    --background: #220036;
-    --brightBlue: #00d9ff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* body {
@@ -22,7 +9,7 @@
     color: var(--brightBlue);
 } */
 
-body {
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
+body{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
 }

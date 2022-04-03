@@ -6,7 +6,7 @@ import email from '../../public/assets/email.svg';
 const PasswordRecovery = () => {
     return (
 		<div className="login">
-			<div className="form-container">
+			<div className="form-container_recovery">
             <img src={logo} alt='logo' className='logo' />
 
 				<h1 className="title">Email has been sent!</h1>

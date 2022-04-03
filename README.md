@@ -134,7 +134,11 @@ module.exports = {
 
 > Diferenciemos componente de “contenedor” en react. Los contenedores o módulos son partes más grandes. En este caso puede ser todo el login. Sin embargo, un componente puede ser un input o un form. Los componentes deben mantenerse pequeños y responder a uno sola necesidad, si no, perdemos funcionalidad.
 
-# ¿Cómo contribuir?
+## React Router Dome
+
+```
+npm install react-router-dom@6
+```
 
 Para contribuir debes:
 
