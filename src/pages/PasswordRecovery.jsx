@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/PasswordRecovery.scss';
-import Header from '../components/Header';
 import email from '../../public/assets/icons/email.svg';
 import logo from '../../public/assets/logo/logo_yard_sale.svg';
 
