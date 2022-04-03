@@ -4,6 +4,8 @@ Es un proyecto creado en el curso Práctico de React.js de Platzi. Estas son las
 
 **(Recursos en figma, diseno del eshop)**
 
+https://scene.zeplin.io/project/60afeeed20af1378ed046538
+
 https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=0%3A719&amp%3Bscaling=scale-down&amp%3Bpage-id=0%3A1&amp%3Bstarting-point-node-id=0%3A719
 
 https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=5%3A2808&amp%3Bscaling=scale-down&amp%3Bpage-id=0%3A998&amp%3Bstarting-point-node-id=5%3A2808
@@ -123,6 +125,14 @@ module.exports = {
 	}
 }
 ```
+
+## Transformando HTML y CSS en componentes de React y Estilos
+
+> Clonamos el repo donde esta el maquetado de HTML y CSS para tenerlo como ejemplo.
+> Estructurar el proyecto: se crean componentes y contenedores dependiendo de la necesidad.
+> Se crean los archivos de saas dependiendo de la necesidad.
+
+> Diferenciemos componente de “contenedor” en react. Los contenedores o módulos son partes más grandes. En este caso puede ser todo el login. Sin embargo, un componente puede ser un input o un form. Los componentes deben mantenerse pequeños y responder a uno sola necesidad, si no, perdemos funcionalidad.
 
 # ¿Cómo contribuir?
 
