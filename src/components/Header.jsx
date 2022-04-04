@@ -1,16 +1,16 @@
 import React from 'react';
-import '../styles/Header.scss';
+import '@styles/Header.scss';
 import { Link } from "react-router-dom";
-import logo from '../../public/assets/logo/logo_yard_sale.svg';
-import icon_menu from '../../public/assets/icons/icon_menu.svg';
-import shopping_cart from '../../public/assets/icons/icon_shopping_cart.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import icon_menu from '@icons/icon_menu.svg';
+import shopping_cart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
     return (
         <nav>
             <img src={icon_menu} alt="menu" className="menu" />
             <div className="navbar-left">
-                <img src={logo} alt='logo' className='logo' />
+                <img src={logo} alt='logo' className='logo-nav' />
                 <ul>
                     <li>
                         <Link to="/">All</Link>

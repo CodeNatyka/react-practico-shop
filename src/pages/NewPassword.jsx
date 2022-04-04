@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../public/assets/logo/logo_yard_sale.svg';
+import logo from '../../public/assets/logos/logo_yard_sale.svg';
 
 const NewPassword = () => {
     return (
