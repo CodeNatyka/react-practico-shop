@@ -146,6 +146,25 @@ Agregamos la navegacion entre diferentes rutas, para ello recurrir a la document
 
 Aplicando Atomic Design como metodología de diseño de producto, creamos todos los componentes, paginas y layouts de acuerdo al diseno del shop, y de una vez integramos el header en cada una de las paginas.
 
+## useEffect y consumo de APIs
+
+Para esta clase debemos instalar Axios y un componente de babel para que webpack entienda los llamados a la API con async y await
+
+```
+    npm install axios
+
+    npm install @babel/plugin-transform-runtime
+
+```
+
+modificar arhico **.babelrc** para agregar esto:
+
+```
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+```
+
 1. Realizar un `git pull origin master` para obtener la última versión desde el repositorio en tu cuenta
    **HTTPS**
 
