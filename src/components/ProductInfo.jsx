@@ -9,6 +9,13 @@ const ProductInfo = () => {
             <div className="ProductInfo">
                 <p>$35,00</p>
                 <p>Bike</p>
+
+                <div class="points">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </div>
+
                 <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
                 <button className="primary-button add-to-cart-button">
                     <img src={add_to_cart} alt="add to cart" />

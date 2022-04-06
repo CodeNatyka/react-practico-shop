@@ -37,3 +37,23 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.points {
+	display: flex;
+	justify-content: center;
+}
+.points > li {
+	background: var(--very-light-pink);
+	width: 8px;
+	height: 8px;
+	margin: 8px 6px;
+	border-radius: 50%;
+	list-style-type: none;
+	cursor: pointer;
+}
+.points > .active {
+	background: var(--hospital-green);
+}
+.points > li:hover {
+	background: var(--hospital-green);
+}

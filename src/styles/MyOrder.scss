@@ -1,11 +1,17 @@
 @use "vars";
 
 .MyOrder {
+	background-color: var(--white);
+	border: 1px solid var(--very-light-pink);
 	width: 360px;
 	padding: 24px;
+	border-radius: 8px;
 	box-sizing: border-box;
-	position: absolute;
+	position: absolute; //Esto desancla el menu de su posicion por defecto
+	top: 60px;
 	right: 0;
+	bottom: auto; //0: llega hasta abajo, auto: Crece en la medida que se agregen productos
+	animation: swipeLeft 0.26s ease;
 }
 .title-container {
 	display: flex;
@@ -35,10 +41,13 @@
 .order p span:nth-child(1) {
 	font-size: var(--md);
 	font-weight: bold;
+	margin: 10px;
 }
 .order p:nth-child(2) {
+	font-size: var(--md);
 	text-align: end;
 	font-weight: bold;
+	margin: 10px;
 }
 
 .primary-button {
@@ -55,5 +64,14 @@
 @media (max-width: 640px) {
 	.MyOrder {
 		width: 100%;
+	}
+}
+
+@keyframes swipeLeft {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 360px;
 	}
 }
