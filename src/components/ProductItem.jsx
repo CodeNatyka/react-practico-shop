@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import '../styles/ProductItem.scss';
-import add_to_cart from '../../public/assets/icons/bt_add_to_cart.svg';
+import add_to_cart_image from '../assets/icons/bt_add_to_cart.svg';
+
+// Conexion con context
+import AppContext from '../context/AppContext';
+
 
 const ProductItem = ({ product }) => {
-    const [cart, setCart] = useState([]);
+    // Esto fue un ejemplo de como usar useState
+    // const [cart, setCart] = useState([]);
+    // const handleCart = () => {
+    //     setCart('clic')
+    // }
 
-    const handleCart = () => {
-        setCart('clic')
+    // Ahora usaremos useContext para tener acceso al estado directamente
+    const { addToCart } = useContext(AppContext);
+
+    const handleCart = (item) => {
+        addToCart(item);
+        console.log(item)
     }
 
     return (
@@ -17,10 +29,11 @@ const ProductItem = ({ product }) => {
                     <p>$ {product.price}</p>
                     <p>{product.title}</p>
                 </div>
-                <figure onClick={handleCart}>
-                    <img src={add_to_cart} alt="add to cart" />
+                <figure onClick={() => handleCart(product)}>
+                    <img src={add_to_cart_image} alt="add to cart" />
                 </figure>
-                {cart}
+                {/* Esto fue para el ejemplo de useState*/}
+                {/* {cart} */}
             </div>
         </div>
     );

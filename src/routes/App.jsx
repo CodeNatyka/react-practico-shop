@@ -13,25 +13,33 @@ import Login from '../pages/Login';
 import Home from '../pages/Home';
 import '../styles/global.css';
 
+// uso de React Context: pasa estado de la App a quien lo necesite
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
+
+
 const App = () => {
+    const initialState = useInitialState(); //Este hook retorna state y addToCart
     return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Navigate to="/" />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/orders" element={<Orders />} />
-                    <Route path="/account" element={<MyAccount />} />
-                    <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/signup" element={<CreateAccount />} />
-                    <Route path="/send-email" element={<SendEmail />} />
-                    <Route path="/new-password" element={<NewPassword />} />
-                    <Route path="/password-recovery" element={<PasswordRecovery />} />
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </Layout>
-        </BrowserRouter>
+        <AppContext.Provider value={initialState}>
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Navigate to="/" />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/orders" element={<Orders />} />
+                        <Route path="/account" element={<MyAccount />} />
+                        <Route path="/checkout" element={<Checkout />} />
+                        <Route path="/signup" element={<CreateAccount />} />
+                        <Route path="/send-email" element={<SendEmail />} />
+                        <Route path="/new-password" element={<NewPassword />} />
+                        <Route path="/password-recovery" element={<PasswordRecovery />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+        </AppContext.Provider>
     );
 };
 
