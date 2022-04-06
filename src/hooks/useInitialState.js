@@ -10,6 +10,7 @@ const initialState = {
  */
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
+
     const addToCart = (payload) => {
         setState({
             ...state,
@@ -20,9 +21,19 @@ const useInitialState = () => {
         });
     };
 
+    const removeFromCart = (payload) => {
+        setState({
+            ...state,
+            // cart: state.cart.filter(items=> items.id !== payload),
+            // Corrige productos duplicados   paso 3/3
+            cart: state.cart.filter((product,index) => index !== payload),
+        });
+    }
+
     return {
         state,
-        addToCart
+        addToCart,
+        removeFromCart
     };
 }
 
