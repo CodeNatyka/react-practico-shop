@@ -2,7 +2,7 @@
     "name": "platzi-practico-shop",
     "version": "1.0.0",
     "description": "react eshop curso practico react platzi",
-    "homepage": "https://codenatyka.github.io",
+    "homepage": "https://codenatyka.github.io/react-practico-shop/",
     "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

@@ -6,8 +6,8 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'build'),
-		filename: 'bundle.js',
-        publicPath: '/'
+		filename: 'react-practico-shop/bundle.js',
+        publicPath: '/react-practico-shop/'
 	},
 	mode: 'development',
 	resolve: {
@@ -72,5 +72,5 @@ module.exports = {
 		compress: true,
 		port: 3005,
         historyApiFallback: true,
-	}
+	},
 }

@@ -22,7 +22,7 @@ const App = () => {
     const initialState = useInitialState(); //Este hook retorna state y addToCart
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter>
+            <BrowserRouter basename="/react-practico-shop">
                 <Layout>
                     <Routes>
                         <Route path="/" element={<Home />} />
